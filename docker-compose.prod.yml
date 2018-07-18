@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  nginx:
+    ports:
+      - 80:80
+
+  phpmyadmin:
+    ports:
+      - 8095:80
+
+#docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d

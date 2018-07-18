@@ -1,0 +1,5 @@
+пше /*
+nginx/logs/*
+mysql/.data/*
+.env
+.idea

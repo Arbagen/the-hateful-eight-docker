@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  php:
+    build:
+      args:
+        - INSTALL_XDEBUG=true
+    environment:
+      PHP_IDE_CONFIG: serverName=8p.ua
+
+  nginx:
+    ports:
+      - 8080:80
+
+  phpmyadmin:
+    ports:
+      - 8081:80
+
+#docker-compose up подхватывает это автоматом
